@@ -1,0 +1,234 @@
+body {
+  background: linear-gradient(-45deg, #f4f4f4, #f3f8fa, #b0d4f1, #d1e8ff);
+  background-size: 400% 400%;
+  animation: gradient 5s ease infinite;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 52px 0 80px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  letter-spacing: 2px;
+  text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-bottom: 52px;
+  animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.container {
+  background: rgba(0, 0, 0, 0.4);
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  max-width: 60vw;
+  width: 100%;
+}
+
+textarea {
+  width: 90%;
+  height: 150px;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  resize: none;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  outline: none;
+}
+
+select {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  border: none;
+  outline: none;
+}
+
+button {
+  padding: 1rem 2rem;
+  background-color: #ff7e5f;
+  border: none;
+  color: #fff;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #feb47b;
+}
+
+.ascii-output {
+  text-align: left;
+  margin-top: 1rem;
+  padding: 12px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  height: 300px;
+  width: 95%;
+  border: 1px solid #ccc;
+  white-space: pre;
+  font-family: monospace;
+  font-size: 1.1rem;
+  color: #fff;
+  resize: none;
+  overflow-y: scroll;
+  overflow-x: scroll;
+}
+
+/*phone view*/
+@media (max-width: 400px) {
+  body {
+    background: linear-gradient(-45deg, #f4f4f4, #f3f8fa, #b0d4f1, #d1e8ff);
+    background-size: 400% 400%;
+    animation: gradient 5s ease infinite;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 52px 0 80px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    letter-spacing: 2px;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  h2 {
+    font-size: 0.75rem;
+    font-weight: 300;
+    margin-bottom: 52px;
+    animation: fadeIn 2s ease-in-out;
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .container {
+    background: rgba(0, 0, 0, 0.4);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    max-width: 60vw;
+    width: 100%;
+  }
+
+  textarea {
+    width: 90%;
+    height: 150px;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    font-size: 0.6rem;
+    margin-bottom: 1rem;
+    resize: none;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    outline: none;
+  }
+
+  select {
+    padding: 0.5rem;
+    font-size: 0.5rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    border: none;
+    outline: none;
+  }
+
+  button {
+    padding: 1rem 2rem;
+    background-color: #ff7e5f;
+    border: none;
+    color: #fff;
+    font-size: 0.6rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  button:hover {
+    background-color: #feb47b;
+  }
+
+  .ascii-output {
+    text-align: left;
+    margin-top: 1rem;
+    padding: 12px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    height: 300px;
+    width: 95%;
+    border: 1px solid #ccc;
+    white-space: pre;
+    font-family: monospace;
+    font-size: 0.55rem;
+    color: #fff;
+    resize: none;
+    overflow-y: scroll;
+    overflow-x: scroll;
+  }
+}
