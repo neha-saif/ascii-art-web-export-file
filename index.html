@@ -29,13 +29,14 @@
         <button type="submit">Generate</button>
       </form>
       {{ if . }}
-      <div class="ascii-output" id="asciiOutput">
-        <pre>{{ . }}</pre> <!-- Directly display the ASCII art passed as string -->
+      <div class="ascii-output" id="asciiOutput">{{ .AsciiArt }}</div>
       </div>
 
-      <!-- Add a new form for downloading the file -->
-      <h2>Download Your ASCII Art</h2>
+  
       <form action="/download" method="post">
+         <input type="hidden" name="inputString" value="{{ .InputString }}">
+    <input type="hidden" name="style" value="{{ .Style }}">
+    <br />
         <button type="submit">Download ASCII Art</button>
       </form>
       {{ end }}
